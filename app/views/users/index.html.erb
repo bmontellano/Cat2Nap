@@ -1,0 +1,12 @@
+<h1>Welcome Cat2Nappers!</h1>
+
+<h3>
+Cat owners:
+<br>
+<br>
+<ul>
+  <% @users.each do |u|  %>
+  <li> <%= u.first_name %></li>
+  <% end %>
+</ul>
+</h3>
