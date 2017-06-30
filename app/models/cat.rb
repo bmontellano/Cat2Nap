@@ -16,7 +16,7 @@ class Cat < ApplicationRecord
         secret_access_key: ENV["S3_SECRET_ACCESS_KEY"]
       }
     end
-
+    
     validates_attachment_content_type :cat_pic, content_type: /\Aimage\/.*\Z/
 
     # def pic
