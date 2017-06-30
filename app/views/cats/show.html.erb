@@ -6,6 +6,7 @@
 <li><h4><b>Age: <%= @cat.age %></b></h4></li>
 <li><h4><b>Gender: <%= @cat.gender %></b></h4></li>
 <li><h4><b>Description: <%= @cat.likes_dislikes %></b></h4></li>
+<li><h4><b>Email the owner here: <%= @cat.user.email %></b></h4></li>
 
 </ul>
 <%# image_tag '//s3-' + @cat.cat_pic.s3_region +  @cat.cat_pic.url[4..-1] %>
