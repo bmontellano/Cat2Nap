@@ -39,11 +39,11 @@ end
     end
   end
 
-# : [:cat_pic_file_name, :cat_pic_file_size, :cat_pic_content_type, :cat_pic_updated_at])
+
 
   private
   def cat_params
-    params.require(:cat).permit(:name, :likes_dislikes, :age, :gender, :cat_pic)
+    params.require(:cat).permit(:name, :likes_dislikes, :age, :gender, cat_pic: [:cat_pic_file_name, :cat_pic_file_size, :cat_pic_content_type, :cat_pic_updated_at])
   end
 
 end
