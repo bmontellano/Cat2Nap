@@ -1,4 +1,6 @@
 class CatsController < ApplicationController
+  before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
+
   def index
     @cats = Cat.all
   end
@@ -42,6 +44,10 @@ end
 # cat_pic: [:cat_pic_file_name, :cat_pic_file_size, :cat_pic_content_type, :cat_pic_updated_at])
 
   private
+  def set_s3_direct_post
+     @s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
+   end
+  
   def cat_params
     params.require(:cat).permit(:name, :likes_dislikes, :age, :gender, :cat_pic)
   end
