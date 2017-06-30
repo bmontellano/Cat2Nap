@@ -11,6 +11,7 @@ gem 'dotenv-rails', group: :development, require: 'dotenv/rails-now'
 gem 'aws-sdk'
 gem 'paperclip'
 
+gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
