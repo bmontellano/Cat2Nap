@@ -2,7 +2,7 @@ class Cat < ApplicationRecord
   belongs_to :user
   has_many :events
   has_attached_file :cat_pic,
-                    styles: { medium: '300x300#', thumb: '100x100#' },
+                    # styles: { medium: '300x300#', thumb: '100x100#' },
                     storage: :s3,
                     url: 's3_domain_url',
                     path: "/:class/:attachment/:id_partition/:style/:filename",
@@ -16,7 +16,7 @@ class Cat < ApplicationRecord
         secret_access_key: ENV["S3_SECRET_ACCESS_KEY"]
       }
     end
-    
+
     validates_attachment_content_type :cat_pic, content_type: /\Aimage\/.*\Z/
 
     # def pic
