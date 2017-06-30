@@ -1,2 +1,20 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<h1>Welcome <%= @user.first_name %></h1>
+
+<h3>Click here to add your cat: <%= link_to 'New Cat', new_cat_path %></h3>
+
+<br>
+
+<h2>Here are your Cats</h2>
+
+
+<br>
+
+<% @user.cats.each do |c| %>
+<h4><b><%= link_to c.name, cat_path(c)  %></b></h4>
+<h4><b>Age: <%= c.age %></b></h4>
+<h4><b>Gender: <%= c.gender %></b></h4>
+<h4><b>Description: <%= c.likes_dislikes %></b></h4>
+<%= image_tag   c.cat_pic %>
+
+<br><br>
+<% end %>

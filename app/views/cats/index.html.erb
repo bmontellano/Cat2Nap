@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <h1>Welcome Cat2Nappers!</h1>
+</div>
+
+<h3 style="text-align:center">Click on the cat you'd like to sit, meowwww *^_^*</h3>
+
+<% @cats.each do |c| %>
+<div class="image">
+<%= link_to (image_tag c.cat_pic), cat_path(c) %>
+</div>
+<br>
+<% end %>
+
+<div class="row">
+  <div class="col-sm-3">
+    <div>
+      <a href="#" class="thumbnail">
+        <img src="http://images5.fanpop.com/image/photos/28100000/Kitty-animal-cubs-28185428-600-408.jpg" alt="kitty 1">
+      </a>
+    </div>

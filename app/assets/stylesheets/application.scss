@@ -19,4 +19,18 @@
 
  body {
    font-family: 'Bubbler One', sans-serif;
+   background-color: rgb(224, 236, 255);
  }
+
+.jumbotron {
+  background: transparentize(black, 0.7);
+  text-align: center;
+}
+
+img {
+  max-width: 400px;
+}
+
+.newuser {
+  width: 400px;
+}
