@@ -6,7 +6,7 @@ class Cat < ApplicationRecord
                     storage: :s3,
                     url: 's3_domain_url',
                     path: "/:class/:attachment/:id_partition/:style/:filename",
-                    s3_region: ENV["S3_REGION"],
+                    s3_region: 'us-west-1',
                     s3_host_name:  ENV["AWS_ENDPOINT"],
                     s3_credentials: Proc.new{ |a| a.instance.s3_credentials }
     def s3_credentials
@@ -23,6 +23,6 @@ class Cat < ApplicationRecord
     #   's3-us-west-1' + cat_pic[2..-1]
     # end
 
-    
+
 
 end
