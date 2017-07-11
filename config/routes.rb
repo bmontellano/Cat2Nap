@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'cats#index'
+  root 'cats#index', as: :catsroot
   resources :users
 
   get '/login' => 'sessions#new', as: :login
