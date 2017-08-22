@@ -10,10 +10,10 @@
   </head>
 
   <body>
+    <div class="container">
       <%= render 'layouts/flash_messages' %>
       <%= render 'layouts/navbar.html.erb' %>
-    <div class="container">
-    <%= yield %>
-      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>

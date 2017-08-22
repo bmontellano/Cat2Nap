@@ -1,6 +1,5 @@
 # <p style= 'color: blue'>Cat 2 Nap</p>
 This is my project#2 Ruby on Rails app hosted on Heroku!</br>
-<!--<a href='https://bmontellano.github.io/hangBoat/'>https://bmontellano.github.io/hangBoat/</a>-->
 
 Click here to go to Cat2Nap! ---> <a href='https://cat2nap.herokuapp.com/'>Cat2Nap </a>
 
