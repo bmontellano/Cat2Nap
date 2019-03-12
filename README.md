@@ -29,7 +29,6 @@ Once cats are posted, interested sitters can click on the cat pictures in the ho
 ## <p style= 'color: #5f0f82'>Bugs and future additions</p>
 BUGS: </br> 
 1. Pictures don't line up in columns.</br>
-2. Pictures don't generate in Heroku app. </br>
 </br>
 DREAM ADDITIONS: </br>
 1. Use a third model called Events which belongs to the cats. Each event will have a "Date from" and "Date to", which the cat owners can add to designate desired dates for cat-sitting. These events should also automatically disappear once "Date from" is passed. 
